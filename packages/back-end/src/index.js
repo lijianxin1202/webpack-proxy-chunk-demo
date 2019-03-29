@@ -37,12 +37,24 @@ Contents
 14	Sources
 15	Further reading
 16	External links
-Overview
+In 1978, Brian Kernighan and Dennis Ritchie published the first edition of The C Programming Language.[1] This book, known to C programmers as "K&R", 
+served for many years as an informal specification of the language.
+The version of C that it describes is commonly referred to as K&R C. The second edition of the book[13] covers the later ANSI C standard, described below.
+
+K&R introduced several language features:
+
+Standard I/O library
+long int data type
+unsigned int data type
+Compound assignment operators of the form =op (such as =-) were changed to the form op= (that is, -=) to remove 
+the semantic ambiguity created by constructs such as i=-10, which had been interpreted as i =- 10 (decrement i by 10) instead of the possibly intended i = -10 (let i be -10).
 `;
 
 app.get("/chunk", (req, res) => {
+  // if no Content-Type header, proxy will work correct
+  res.setHeader("Content-Type", "text/plain");
   try {
-    const max = 5;
+    const max = 6;
     let count = 1;
     const timer = setInterval(() => {
       res.write(s);
@@ -51,14 +63,16 @@ app.get("/chunk", (req, res) => {
         res.end("end");
         clearInterval(timer);
       }
-    }, 3000);
+    }, 5000);
   } catch (e) {
     res.end(e);
   }
 });
 app.get("/proxy", (req, res) => {
+  // if no Content-Type header, proxy will work correct
+  res.setHeader("Content-Type", "text/plain");
   try {
-    const max = 5;
+    const max = 6;
     let count = 1;
     const timer = setInterval(() => {
       res.write(s);
@@ -67,7 +81,7 @@ app.get("/proxy", (req, res) => {
         res.end("end");
         clearInterval(timer);
       }
-    }, 3000);
+    }, 5000);
   } catch (e) {
     res.end(e);
   }
