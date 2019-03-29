@@ -23,6 +23,11 @@
   color: #61dafb;
 }
 
+.message {
+  height: 200px;
+  overflow: auto;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

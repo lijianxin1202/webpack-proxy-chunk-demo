@@ -39,9 +39,13 @@ class App extends Component {
     return (
       <div className="App">
         <div>Chunk Data:</div>
-        <div>{this.state.chunkData}</div>
+        <div className="message">
+          <pre>{this.state.chunkData}</pre>
+        </div>
         <div>Proxy Data:</div>
-        <div>{this.state.proxyData}</div>
+        <div className="message">
+          <pre>{this.state.proxyData}</pre>
+        </div>
       </div>
     );
   }
