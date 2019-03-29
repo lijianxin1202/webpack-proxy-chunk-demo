@@ -1,0 +1,31 @@
+Arguments: 
+  /Users/xsky/.nvm/versions/node/v8.11.3/lib/node_modules/node/bin/node /usr/local/bin/yarn eject
+
+PATH: 
+  /Users/xsky/.nvm/versions/node/v8.11.3/bin:/Library/Frameworks/Python.framework/Versions/3.7/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+
+Yarn version: 
+  1.5.1
+
+Node version: 
+  11.8.0
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  No manifest
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: Couldn't find a package.json file in "/Users/xsky/Desktop/dev/test/webpack-proxy-chunk-demo/packages"
+      at new MessageError (/usr/local/lib/node_modules/yarn/lib/cli.js:186:110)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:40048:15
+      at Generator.next (<anonymous>)
+      at step (/usr/local/lib/node_modules/yarn/lib/cli.js:98:30)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:109:13
