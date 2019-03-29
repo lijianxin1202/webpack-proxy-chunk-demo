@@ -1,5 +1,5 @@
 # webpack-proxy-chunk-demo
-demo for webpack dev servier cannot proxy chunked request
+demo for webpack dev server cannot proxy chunked request
 
 # start server
 ```sh
