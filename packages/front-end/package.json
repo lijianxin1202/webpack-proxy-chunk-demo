@@ -55,7 +55,8 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js"
+    "test": "node scripts/test.js",
+    "debug": "node --inspect --inspect-brk scripts/start.js"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -115,6 +116,5 @@
     "presets": [
       "react-app"
     ]
-  },
-  "proxy": "http://localhost:7000"
+  }
 }
